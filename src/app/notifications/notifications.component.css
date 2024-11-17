@@ -1,0 +1,72 @@
+.notifications {
+    margin: 0;
+    padding: .5em 1em;
+    width: fit-content;
+    background-color: #332957;
+    color: white;
+    font-size: 1.25rem; /*same as the bell icon's ratio*/
+    border: 2px solid white;
+    border-right: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+    max-width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .9);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, .5);
+}
+
+.notifications:hover{
+    opacity: 0.75;
+}
+
+#active {
+    cursor: auto;
+    padding-top: 0;
+}
+
+#active:hover {
+    opacity: 1;
+}
+
+#text-wrapper {
+    padding: .5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #332957;
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid white;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover, a:focus, a:active {
+    opacity: .5;
+    color: inherit;
+}
+
+#close {
+    cursor: pointer;
+}

@@ -1,0 +1,31 @@
+app-notifications {
+    position: fixed;
+    right: 0;
+    z-index: 10;
+}
+#b1{
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 1rem;
+    border:none;
+    background: #3C3554;
+    color: white;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x :hidden;
+}
+.researchPostCard{
+    width: 33vw;
+}
+app-activities-card{
+    width:25vw;
+}
+@media screen and (max-width:600px){
+    .researchPostCard{
+        width: 100vw;
+    }
+    app-activities-card{
+        width:100vw;
+    }
+}

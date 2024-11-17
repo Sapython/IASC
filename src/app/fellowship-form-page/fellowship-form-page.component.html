@@ -1,0 +1,115 @@
+<app-header></app-header>
+<h2>Fellowship Form</h2>
+<form (submit)="formSubmit($event)">
+    <div class="form-item">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="John Doe" required>
+    </div>
+    <div class="form-item">
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" required>
+    </div>
+    <div class="form-item">
+        <label for="father-name">Father's Name</label>
+        <input type="text" name="father-name" id="father-name" placeholder="Joseph Doe" required>
+    </div>
+    <div class="form-item">
+        <label for="qualification">Qualification</label>
+        <input type="text" name="qualification" id="qualification" placeholder="Post Graduation" required>
+    </div>
+    <div class="form-item">
+        <label for="affiliation">Affiliation</label>
+        <input type="text" name="affiliation" id="affiliation" placeholder="Science International" required>
+    </div>
+    <div class="form-item">
+        <label for="occupation">Occupation</label>
+        <input type="text" name="occupation" id="occupation" placeholder="Professor" required>
+    </div>
+    <div class="form-item">
+        <label for="mailing-address">Mailing Address</label>
+        <input type="text" name="mailing-address" id="mailing-address"
+            placeholder="Flat/House No., Area/Street, City, State, Pin Code" required>
+    </div>
+    <div class="form-item">
+        <div class="form-subitem">
+            <label for="contact-number">Contact No.</label>
+            <input type="text" name="contact-number" id="contact-number" placeholder="+91 99999 88888" required>
+        </div>
+        <div class="form-subitem">
+            <label for="office-contact-number">Office</label>
+            <input type="text" name="office-contact-number" id="office-contact-number">
+        </div>
+        <div class="form-subitem">
+            <label for="residence-contact-number">Residence</label>
+            <input type="text" name="residence-contact-number" id="residence-contact-number">
+        </div>
+    </div>
+    <div class="form-item">
+        <div class="form-subitem">
+            <label for="fax-number">Fax Number</label>
+            <input type="text" name="fax-number" id="fax-number" placeholder="+91 41 444-5555">
+        </div>
+        <div class="form-subitem">
+            <label for="office-fax-number">Office</label>
+            <input type="text" name="office-fax-number" id="office-fax-number">
+        </div>
+        <div class="form-subitem">
+            <label for="residence-fax-number">Residence</label>
+            <input type="text" name="residence-fax-number" id="residence-fax-number">
+        </div>
+    </div>
+    <div class="form-item">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="johndoe@example.com" required>
+    </div>
+    <div class="form-item">
+        <label for="specialization">Specialization</label>
+        <input type="text" name="specialization" id="specialization" placeholder="Medicinal Plants" required>
+    </div>
+    <div class="form-item">
+        <label for="broad-area">Broad Area</label>
+        <input type="text" name="broad-area" id="broad-area" placeholder="Medicine" required>
+    </div>
+    <div class="form-item">
+        <label for="sub-area">Sub Area</label>
+        <input type="text" name="sub-area" id="sub-area" placeholder="Cultivation of Medicinal Plants" required>
+    </div>
+    <div class="form-item">
+        <label for="award">Award</label>
+        <input type="text" name="award" id="award" placeholder="SI Best Research Paper 2019" required>
+    </div>
+    <div class="form-item">
+        <label for="fellowship">Fellowship</label>
+        <input type="text" name="fellowship" id="fellowship" placeholder="IISM Fellowship" required>
+    </div>
+    <div class="form-item">
+        <label for="recognition">Recognition</label>
+        <input type="text" name="recognition" id="recognition" placeholder="Interview by The Hindu" required>
+    </div>
+    <div class="form-item">
+        <label for="publication">Publication</label>
+        <input type="text" name="publication" id="publication" placeholder="A Research on Medicinal Plants"
+            required>
+    </div>
+    <div>
+        <br>
+        Participation in Symposia, Seminars, Workshops, Science Communication Activities
+    </div>
+    <div class="form-item">
+        <label for="national">At National Level</label>
+        <input type="text" name="national" id="national" required>
+    </div>
+    <div class="form-item">
+        <label for="international">At International Level</label>
+        <input type="text" name="international" id="international" required>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+<div class="modal" id="{{modal}}" (click)="modal=false">
+    <div id="submitted" (click)="$event.stopPropagation()">
+        <h3>Your information has been submitted.</h3>
+        <p>The status of your fellowship will be updated through your email.</p>
+        <button (click)="modal=false">Okay</button>
+    </div>
+</div>
+<app-footer></app-footer>

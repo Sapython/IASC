@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Upper part css */
+
+h2{
+    text-align: center;
+    color: rgb(28, 28, 95);
+    font-weight: 500;
+}
+
+.upper-box{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.upper-box1{
+    width: 85%;
+    height: auto;
+    margin: 1% auto;
+    padding-left: 3rem;
+}
+
+.upper-box1 h3{
+    color: rgb(28, 28, 95);
+    font-weight: 500;
+}
+
+.upper-box1 p{
+    color: rgb(28, 28, 95);
+    font-weight: 500;
+}
+
+.upper-box img
+{
+    border-radius: 1rem;
+    object-fit: cover;
+    height: 300px;
+    width:90%;
+    margin: 1rem;
+
+}
+
+
+
+
+
+
+div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+ .stepper p {
+    border-color: rgb(28, 28, 95) !important;
+    margin:1rem 1rem 1rem 1rem; padding: 5rem 5rem 5rem 5rem;
+    counter-increment: section;
+    position: relative;
+   
+  }
+  
+  button{
+    border-radius: 1rem;
+    border: 2px solid  rgb(28, 28, 95);
+    color: rgb(28, 28, 95);
+    padding: 10px 10px;
+    text-align: center;
+    margin: 1rem;
+  }
+  button:hover{
+      font-weight: bold;
+      padding: 10px 10px;
+      cursor: pointer;
+  }
+  
+  

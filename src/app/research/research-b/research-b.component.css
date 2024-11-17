@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #3C3554;
+    outline: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italics {
+    font-style: italic;
+}
+
+h2 {
+    margin: 1em .2em;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700; 
+}   
+
+#wrapper {
+    width: 85%;
+    margin: 2.5em auto;
+    padding: 2em;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#research-img, #text-wrapper, #table-wrapper, #plants-wrapper {
+    margin: 1em auto;
+    width: 95%;
+}
+
+#research-img {
+    display: block;
+    border-radius: 50px;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+#text-wrapper p {
+    margin-bottom: 1em;
+}
+
+#table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+caption {
+    font-size: 1.3rem;
+    margin-bottom: .5em;
+}
+
+tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+tr:hover {
+    background-color: lightblue;
+}
+
+th, td {
+    border: 1px solid #3C3554;
+    padding: .5em;
+}
+
+th {
+    background-color: #3C3554;
+    color: white;
+    border-color: white;
+    border-top: 1px solid #3C3554;
+    border-bottom: 1px solid #3C3554;
+}
+
+th:first-child {
+    border-left: 1px solid #3C3554;
+}
+
+th:last-child {
+    border-right: 1px solid #3C3554;
+}
+
+.plant-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2em 0;
+}
+
+.plant-wrapper:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.plant-img {
+    display: block;
+    width: 45%;
+    object-fit: cover;
+}
+
+.plant-description h3 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.plant-description {
+    width: 45%;
+}
+
+@media(max-width:768px) {
+    #wrapper {
+        padding: 1em;
+        margin: 1.25em auto;
+    }
+
+    #research-img, #text-wrapper, #table-wrapper, #plants-wrapper {
+        width: 100%;
+    }
+
+    .plant-wrapper, .plant-wrapper:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .plant-img, .plant-description {
+        width: 100%;
+    }
+
+    .plant-img {
+        max-height: 300px;
+        margin-bottom: 1em;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    p , caption, table {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:448px) {
+    h2 {
+        font-size: 1.25rem;
+    }
+}

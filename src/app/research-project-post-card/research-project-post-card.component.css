@@ -1,0 +1,25 @@
+.card{
+    width: 100%;
+    padding:2%;
+    margin:5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+} 
+.card h3{
+    color: rgb(5, 5, 54);
+    font-size:x-large;
+}
+.card p{
+    color: rgb(7, 7, 58);
+    font-size:medium;
+}
+#b1{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 1rem;
+    border:none;
+    background: #3C3554;
+    color: white;
+}

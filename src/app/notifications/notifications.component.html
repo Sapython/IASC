@@ -1,0 +1,13 @@
+<div *ngIf="!active" (click)="active=true" class="notifications">
+    <i class="icon-iasc" uk-icon="icon:bell; ratio:1.25"></i> {{notifications.length}}
+</div>
+<div *ngIf="active" class="notifications uk-animation-slide-right-medium" style="padding:20px 20px;border-radius:10px" id="active">
+    <div id="text-wrapper">
+        <i class="icon-iasc" uk-icon="icon:bell; ratio:1.25"></i>
+        <span>{{notifications.length}} Notification(s)</span>
+        <span id="close"><i uk-icon="close" (click)="active=false" class="uk-icon-button"></i></span>
+    </div>
+    <ul *ngIf="active">
+        <li *ngFor="let notification of notifications"><a href="{{notification.link}}" target="_blank">{{notification.message}}</a></li>
+    </ul>
+</div>

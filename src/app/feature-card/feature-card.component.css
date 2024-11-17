@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+ 
+#b1{
+    position: relative;
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 1rem;
+    border:none;
+    background: #3C3554;
+    color: white;
+}
+#d1{
+    border:2px solid black;
+    border-radius:15px;
+    box-shadow: 10px 10px 10px black;
+    padding-left:50px;
+}
+#p1{
+    color: rgb(12, 12, 39);
+    font-size:small;
+}
+#p2{
+    color: rgb(12, 12, 39);
+    font-size:smaller;
+
+}
+.main-box{
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin: 0% 5% 0% 5%;
+}
+
+.main-box h2{
+    text-align: center;
+    
+}
+.main-box .card-container ul li{
+    padding: 2%;
+}
+
+.alignCenter{
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%)
+}
+.alignCenterHR{
+    left: 50%;
+    transform:translate(-50%)
+}
+.featuredImage{
+    width: 500px;
+    height: 300px;
+}
+.genesisImage{
+    width:500px;
+    height:auto
+}
+.slideUp{
+    transition: all 800ms ease-in-out;
+}
+.slideUp:hover{
+    box-shadow:5px 5px 10px #3C3554;
+}
+.hiddenContent{
+    margin-top: 0px;
+}
+#mainGenesisCard{
+    box-shadow:10px 10px 30px grey;
+    border-radius: 20px;
+    border : 5px solid rgb(195,195,247);
+    z-index:1;
+    transition: all 800ms ease-in-out;
+    height:440px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#genesisOpenButton{
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    transition: all 800ms ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+#genesisOpenSmallButton{
+    display: none;
+}
+@media screen and (max-width:600px){
+    app-author-card{
+        display:none;
+    }
+    #mainGenesisCard{
+        margin-left: 10px;
+        margin-right:10px;
+    }
+    #genesisOpenButton{
+        display: none;
+    }
+    #genesisOpenSmallButton{
+        display: block;
+        /* z-index: 5; */
+        margin-top: 10px;
+        position: relative;
+        width: 100%;
+        transition: all 800ms ease-in-out;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .featuredImage{
+        height:min-content;
+    }
+    .genesisImage{
+        margin-bottom: 0%;
+    }
+    .genesisText{
+        width: 100%;
+    }
+}

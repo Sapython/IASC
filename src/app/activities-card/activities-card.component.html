@@ -1,0 +1,17 @@
+<div class="uk-card uk-card-default uk-card-hover" style="margin: 30px 10px;border:2px solid rgb(224, 224, 224)">
+    <div class="uk-card-header">
+        <div class="uk-card-media-top uk-height-large">
+            <img [src]="imageSource" class=" uk-height-large" style="object-fit:cover;width:100%" alt="{{title}}">
+        </div>
+        <h3 class="uk-card-title">{{title}}</h3>
+        <p class="uk-text-meta uk-margin-remove-top"><time [attr.datetime]="utcTime">{{normTime}}</time></p>
+    </div>
+    <div class="uk-card-badge uk-label">{{location}}</div>
+    <div class="uk-card-body">
+        <p>{{excerpt}}</p>
+    </div>
+    <div class="uk-card-footer">
+        <a href="{{postUrl}}"><button id="b1" class="uk-button liftUp">More Info</button></a>
+    </div>
+
+</div>

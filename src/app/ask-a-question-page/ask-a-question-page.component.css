@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #332957;
+    outline: none;
+}
+
+h2 {
+    margin: 1em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+form, #submitted {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 80%;
+    margin: 1em auto 2.5em auto;
+    padding: 2em;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+label, input, textarea {
+    width: 45%;
+}
+
+input, textarea {
+    font-size: 1rem;
+    padding: .5em;
+    border: none;
+    border-bottom: 1px solid #332957;
+    font-family: inherit;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+button {
+    display: block;
+    margin: 2em auto 0 auto;
+    font-size: 1.5rem;
+    padding: .5em 1.5em;
+    background-color: #332957;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button:hover, button:focus, button:active {
+    opacity: 0.7;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 5;
+}
+
+#false {
+    display: none;
+}
+
+#true {
+    display: block;
+}
+
+#submitted {
+    text-align: center;
+    background-color: #fff;
+    max-width: fit-content;
+}
+
+#submitted h3 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 1em;
+}
+
+#submitted p {
+    font-weight: 400;
+}
+
+@media(max-width:650px) {
+    h2 {
+        font-size: 1.667rem;
+    }
+    
+    #submitted h3 {
+        font-size: 1.2rem;
+    }
+
+    form, #submitted {
+        width: 75%;
+    }
+
+    form div {
+        margin: 1em .1em;
+    }
+
+    form, #submitted, button {
+        font-size: 1rem;     
+    }
+
+    input, textarea {
+        font-size: .667rem;
+    }
+
+    textarea {
+        height: 50px;
+    }
+}

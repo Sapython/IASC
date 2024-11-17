@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+</head>
+    <body>
+        <app-header></app-header>
+        <spacer></spacer>
+        <h1 style="text-align: center;">Our Gallery</h1>
+        <spacer></spacer>
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+            <app-gallery-card *ngFor="let source of images" [source]="source"></app-gallery-card>
+        </div>
+        <spacer></spacer>
+        <app-footer></app-footer>
+    </body>
+</html>

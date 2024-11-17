@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IASC</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.18/dist/css/uikit.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css" />
+    </head>
+    
+    <body style="overflow-x: hidden;">
+        <app-header></app-header>
+        <appCarousel></appCarousel>
+        <app-notifications style="top:100px"></app-notifications>
+        <app-feature-card></app-feature-card>
+        <spacer></spacer>
+        <div id="researchType" class="uk-child-width-1-5@l uk-child-width-1-5@xl uk-child-width-1-1@s uk-grid-match" styles="padding:50px 50px;">
+            <app-icon-card *ngFor="let data of researchesType" [source]="data.image" [researchText]="data.text"></app-icon-card>
+        </div>
+        <spacer></spacer>
+        <h1 style="text-align:center;font-size:xx-large;margin:20px 20px;overflow: hidden;">Our Research Projects</h1>
+        <div class="uk-position-relative card-container" tabindex="-1" style="width:100%;" uk-slider="autoplay:true;autoplay-interval:3000;pause-on-hover:false;">
+            <ul class="uk-slider-items uk-margin-medium uk-slider-container-offset" style="width:150vw;" >
+                <app-research-project-post-card 
+                class="researchPostCard" 
+                *ngFor="let source of researches" 
+                style="margin:0%;margin-bottom:40px" 
+                [imageSource]="source">
+                </app-research-project-post-card>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+        <spacer></spacer>
+        <div class="main-box uk-text-center uk-margin-medium-left uk-margin-medium-right ">
+            <p class="uk-margin-right uk-margin-left" style="font-size:xx-large;color: black;"><b>You can get your answers about
+                    our research topics from our amazing team of researchers.</b></p>
+            <p class="uk-margin-left uk-margin-right" style="color:rgb(9, 9, 51)">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Curabitur cursus tincidunt commodo.
+                Nunc justo nisi, vestibulum facilisis porta vestibulum, ultrices volutpat arcu. Quisque nec dui mattis,
+                fringilla magna in, vulputate enim. Fusce ut euismod ligula, id laoreet ex. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Curabitur cursus tincidunt commodo. Nunc justo nisi, vestibulum facilisis
+                porta vestibulum, ultrices volutpat arcu. Quisque nec dui mattis, fringilla magna in, vulputate enim.
+                Fusce ut euismod ligula, id laoreet ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                cursus tincidunt commodo. Nunc justo nisi, vestibulum facilisis porta vestibulum, ultrices volutpat arcu.
+                Quisque nec dui mattis, fringilla magna in, vulputate enim. Fusce ut euismod ligula, id laoreet ex. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus tincidunt commodo. Nunc justo nisi,</p>
+            <br>
+            <button id="b1" class="uk-button">Ask a question</button>
+        </div>
+        <spacer></spacer>
+        <div class="uk-position-relative card-container" tabindex="-1" style="width:100%;" uk-slider="autoplay:false;autoplay-interval:3000;pause-on-hover:false;">
+            <ul class="uk-slider-items uk-margin-medium uk-slider-container-offset uk-align-center" style="width:150vw;" >
+                <app-activities-card 
+                *ngFor="let activity of activities" 
+                [title]="activity.title"
+                [imageSource]="activity.image"
+                [location]="activity.location"
+                [excerpt]="activity.excerpt"
+                [postUrl]="activity.postUrl"
+                [utcTime]="activity.utcTime"
+                [normTime]="activity.normTime"
+                style="margin:0%;margin-bottom:40px;"></app-activities-card>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+        <app-join-us-form style="margin: 20px 20px;"></app-join-us-form>
+        <app-footer></app-footer>
+    </body>
+</html>

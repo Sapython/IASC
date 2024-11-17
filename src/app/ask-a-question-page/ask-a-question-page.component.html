@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div *ngIf="!questionSubmitted">
+    <h2>Ask a question</h2>
+    <form (submit)="submitQuestion($event)">
+        <div>
+            <label for="question-title">Question Title</label>
+            <input type="text" name="question-title" id="question-title" placeholder="Your Question" required>
+        </div>
+        <div>
+            <label for="question-brief">Question in Brief</label>
+            <textarea name="question-brief" id="question-brief" placeholder="Explain your question in brief"></textarea>
+        </div>
+        <div>
+            <label>References (if any)</label>
+            <input type="file" name="references">
+        </div>
+        <button type="submit">Ask Question</button>
+    </form>
+</div>
+<div *ngIf="questionSubmitted">
+    <h2>Your answers will be mailed to you</h2>
+    <form (submit)="formSubmitted($event)">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Eg. John Doe" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Eg. johndoe@example.com" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+        </div>
+        <button type="submit">Proceed to Pay</button>
+    </form>
+    <div class="modal" id="{{modal}}" (click)="modal=false">
+        <div id="submitted" (click)="$event.stopPropagation()">
+            <h3>Your question has been submitted.</h3>
+            <p>The answer to your question will be mailed.</p>
+            <button (click)="modal=false">Okay</button>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

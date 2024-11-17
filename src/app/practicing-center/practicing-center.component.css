@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* first-box  */
+
+.first-box {
+    width: 60%;
+    height: auto;
+    margin: 0% 15% 0% 15%;
+    display: flex;
+    
+}
+
+.first-box h2{
+    font-weight: 600;
+    color: rgb(28, 28, 95);
+    
+    
+}
+.first-box h1{
+    font-size: 4.5rem;
+    margin-top: -40px;
+    display:inline-block
+}
+
+.first-box .a img
+{
+    border-radius: 1rem;
+    right: 10%;
+    box-shadow: -1px 1px 8px grey;
+    left: 50%;
+    margin-right: 10rem;
+   
+}
+
+.first-box p{
+    font-weight: 500;
+    color: rgb(28, 28, 95);
+    width: 80%;
+    padding-left: 1rem;
+    font-size: larger;
+}
+
+.first-box h1{
+    font-weight: 600;
+    color: rgb(28, 28, 95);
+    padding: 1rem;
+}
+.first-box h1 img{
+    width: 20%;
+    height:auto;
+    margin-left:15%
+}
+
+/* Main-box */
+.main-box{
+    width: 90%;
+    height: auto;
+    margin: 0% 5% 0% 5%;
+    display: flex;
+}
+
+.wrapper-box{
+    width: 100vw;
+    margin:  4rem;
+    border-radius: 1rem;
+    box-shadow: -1px 1px 8px grey;
+    position:relative;
+    
+}
+
+.wrapper-box .text p
+{
+    font-size :30px;
+    font-weight: 500;
+    color: rgb(252, 252, 252);
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+   
+   
+}
+
+/* content box */
+
+.main-box1{
+    width: 90vw;
+    height: auto;
+    margin: 5% 5% 0% 5%;
+    border-radius: 1rem;
+    box-shadow: -1px 1px 8px grey;
+}
+
+.main-box1 h2{
+    font-weight: 600;
+    color: rgb(28, 28, 95);
+    padding: 1rem;
+   
+}
+
+.main-box1 p{
+    font-weight: 500;
+    color: rgb(28, 28, 95);
+    padding: 1rem;
+    font-size:small;
+   
+}
+
+/* accordian box */
+.acc-box
+{
+    width: 90%;
+    height: auto;   
+    border-radius: 1rem;
+    display: inline-flex;
+    box-shadow: -1px 1px 8px grey;
+}
+
+ul .items1
+{
+    width: 90%;
+    border-radius: .5rem;
+    box-shadow: -1px 1px 8px grey;
+    margin: 0% 5% 1% 5%;
+}
+
+ul .items1 a
+{
+    font-weight: 500;
+    color: rgb(28, 28, 95);
+    padding: 1rem;
+    font-size:large;
+}
+
+/* OUR GROUP OF RESPECTED CONSULTANTS */
+.teacher-box
+{
+    width: 40%;
+    border-left: .5rem dashed rgb(28, 28, 95);
+    border-right: .5rem dashed rgb(28, 28, 95);
+    height: auto;
+    margin: auto;
+
+}
+
+hr{
+    height: 4px;
+    width: 90%;
+    background-color:rgb(209, 209, 221);
+    margin: auto;
+}
+
+.teacher-box h2{
+    text-align: center;
+    font-size:1.5rem;
+}
+.teacher-box h3{
+    font-weight: 500;
+    color: rgb(28, 28, 95);    
+    padding: 1rem;
+    text-align: center;
+    font-size:1.2rem;
+}
+
+
+@media (max-width: 600px){
+    .wrapper-box{
+        width: 40vw;
+        margin:  5px;
+        border-radius: 1rem;
+        box-shadow: -1px 1px 8px grey;
+        position:relative;
+    }
+    .main-box{
+        width: 90%;
+        height: auto;
+        margin: 5% 5% 0% 5%;        
+        display: flexbox;
+        flex-wrap: wrap;
+    }
+    .first-box .a img{
+        margin:0 3rem 0 3rem;
+        float: left;
+    }
+    .first-box h2{
+        font-size: 1rem;
+    }
+    .first-box h1{
+        font-size: 2rem;
+        margin-top: -20px;
+        display:inline-flex;
+    }
+    .first-box h1 img{
+        width: 40%;
+        height:auto;
+        margin-left:5%;
+    }
+    .first-box p{
+        font-weight: 500;
+        color: rgb(28, 28, 95);
+        width: 100%;
+        padding-left: 1rem;
+        font-size:small;
+    }
+    .main-box1{
+        width:85vw;
+    }
+    .teacher-box
+{
+    width: 70%;
+}
+}

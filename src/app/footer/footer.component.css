@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+footer {
+    background-color: #332957;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.links a, .links a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#search input {
+    background-color: transparent;
+    padding: .5em;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+#search input::placeholder {
+    color: inherit;
+}
+
+#search input:focus, #search input:hover {
+    background-color: white;
+    color: #332957;
+}
+
+#search button {
+    color: white;
+    padding: .5em;
+}
+
+#login-signup button {
+    background-color: white;
+    padding: .5em 3em;
+    color: #332957;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#login-signup button:nth-child(1) {
+    border-radius: 20px 0 0 20px;
+    margin-right: .2em;
+}
+
+#login-signup button:nth-child(2) {
+    border-radius: 0 20px 20px 0;
+    margin-left: .2em;
+}
+
+#social-links {
+    margin-top: 2em;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links a:hover, .links a:focus, .links a:active, #search button:hover, #search button:focus, #search button:active, #login-signup button:hover, #login-signup button:focus, #login-signup button:active, #social-links button:hover, #social-links button:focus, #social-links button:active {
+    opacity: 0.5;
+}
+
+@media(max-width:1000px){
+    footer {
+        flex-direction: column;
+    }
+
+    .links{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: .5em 0;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1em;
+    }
+
+    #social-links {
+        margin:0;
+    }
+
+    #social-links button {
+        margin: 0 0.5em;
+    }
+}
+
+@media (max-width:550px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    #social-links {
+        margin: 1em;
+    }
+
+    .links {
+        display: none;
+    }
+}
+
+
+@media (max-width:332px) {
+    #login-signup button {
+        padding: .5em 2.5em;
+    }
+}
